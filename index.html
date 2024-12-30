@@ -5,56 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday!</title>
     <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             text-align: center;
-            background-color: #f9f9f9;
+            background-color: #f1f1f1;
             color: #333;
-            padding: 20px;
+            line-height: 1.6;
+            padding: 0 20px;
+            margin: 0;
         }
+
         h1 {
-            color: #ff6347;
+            font-size: 2.5rem;
+            color: #FF6347;
+            margin-top: 40px;
+            font-weight: 700;
         }
+
         .card {
             background: #fff;
-            border: 2px solid #ff6347;
-            border-radius: 8px;
-            padding: 20px;
-            max-width: 600px;
-            margin: 20px auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 700px;
+            margin: 50px auto;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
         .card img {
             max-width: 100%;
-            border-radius: 8px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
+
         p {
-            font-size: 18px;
-            line-height: 1.5;
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            text-align: justify;
         }
+
         .btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 12px 25px;
+            font-size: 1.1rem;
             color: #fff;
-            background: #ff6347;
+            background: #FF6347;
             text-decoration: none;
-            border-radius: 4px;
-            transition: background 0.3s ease;
+            border-radius: 50px;
+            transition: background 0.3s ease, transform 0.3s ease;
         }
+
         .btn:hover {
-            background: #e5533f;
+            background: #E5533F;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #888;
+        }
+
+        footer a {
+            color: #FF6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .btn {
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
 <body>
     <h1>🎉 Happy Birthday, Noel! 🎉</h1>
     <div class="card">
-        <img src="./images/Screenshot (279).png" alt="">
+        <img src="./images/Screenshot (279).png" alt="Birthday Celebration">
         <p>Wishing you a day filled with joy, laughter, and amazing memories! May this year bring you all the success and happiness you deserve.</p>
         <p>Thank you for being an incredible friend and an outstanding procurement officer. Here’s to another year of greatness!</p>
         <a href="https://youtu.be/xP5C6yW9XVs" class="btn">Celebrate Now!</a>
     </div>
+
+    <footer>
+        <p>Created with ❤️ for Noel. <br> <a href="https://github.com/yourusername/happybday" target="_blank">View the source code on GitHub</a></p>
+    </footer>
 </body>
 </html>
